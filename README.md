@@ -19,13 +19,13 @@ numpy
  Train:
 -------  
  
- '''
+```
  bash run.sh
-'''
+```
 
 Evaluation:
 -------  
  
- '''
+```
  python3 eval.py
-'''
+```
