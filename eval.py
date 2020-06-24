@@ -14,7 +14,7 @@ from  sklearn.metrics import classification_report
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model_dir', type=str,default='saved_models/00', help='Directory of the model.')
-parser.add_argument('--model', type=str, default='_best_model.pt', help='Name of the model file.')
+parser.add_argument('--model', type=str, default='best_model.pt', help='Name of the model file.')
 parser.add_argument('--data_dir', type=str, default='dataset/tacred')
 parser.add_argument('--dataset', type=str, default='test', help="Evaluate on dev or test.")
 
@@ -49,7 +49,7 @@ batch = DataLoader(data_file, opt['batch_size'], opt, vocab, evaluation=True)
 
 helper.print_config(opt)
 label2id = constant.LABEL_TO_ID
-id2label = dict([(v,k) for k,v in label2id.items()])
+id2label = dict([(v, k) for k, v in label2id.items()])
 
 predictions = []
 all_probs = []
