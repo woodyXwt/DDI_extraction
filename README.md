@@ -6,7 +6,7 @@ The preprocessed dataset is  available at [this link](https://drive.google.com/d
 
 
 Requirements:
-===
+-------  
 
 python 3.6
 
@@ -17,11 +17,11 @@ sklearn
 numpy
 
  Train:
- ====
+-------  
  
  bash run.sh
 
 Evaluation:
-====
+-------  
  
  python3 eval.py
